@@ -1,0 +1,35 @@
+{
+    "id": 1,
+    "name": "Сириус",
+    "constellation": "Большой Пес",
+    "is_visible": true,
+    "radius": 1.71
+}
+{
+    "id": 2,
+    "name": "Канопус",
+    "constellation": "Корма",
+    "is_visible": true,
+    "radius": 0.73
+}
+{
+    "id": 3,
+    "name": "Арктур",
+    "constellation": "Богатырь",
+    "is_visible": true,
+    "radius": 1.5
+}
+{
+    "id": 4,
+    "name": "Вега",
+    "constellation": "Лира",
+    "is_visible": true,
+    "radius": 2.13
+}
+{
+    "id": 5,
+    "name": "Полиус",
+    "constellation": "Центавр",
+    "is_visible": false,
+    "radius": 1.3
+}
