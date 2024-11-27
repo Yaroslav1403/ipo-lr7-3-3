@@ -4,24 +4,16 @@ import json
 #Определяем имя файла, где будет храниться информация о звёздах
 file = 'stars.json'
 
-#Пытаемся открыть файл stars.json
-try:
-    with open(file, 'r') as f:
-        #Если файл существует, загружаем из него данные и сохраняем в переменную data_about_stars
-        data_about_stars = json.load(f)
-
-#Если файл не найден
-except FileNotFoundError:
-    #Создаём список с данными о звёздах и сохраняем его в переменную data_about_stars_1
-    data_about_stars_1 = [
+#Создаём список с данными о звёздах и сохраняем его в переменную data_about_stars_1
+data_about_stars_1 = [
         {"id": 1, "name": "Сириус", "constellation": "Большой Пес", "is_visible": True, "radius": 1.71},
         {"id": 2, "name": "Канопус", "constellation": "Корма", "is_visible": True, "radius": 0.73},
         {"id": 3, "name": "Арктур", "constellation": "Богатырь", "is_visible": True, "radius": 1.5},
         {"id": 4, "name": "Вега", "constellation": "Лира", "is_visible": True, "radius": 2.13},
         {"id": 5, "name": "Полиус", "constellation": "Центавр", "is_visible": False, "radius": 1.3}
     ]
-    with open(file, 'w') as f:
-        json.dump(data_about_stars_1, f)
+with open(file, 'w') as f:
+    json.dump(data_about_stars_1, f)
 
 #Создаём переменную count_of_operations, которая будет использоваться для подсчета количества выполненных операций с записями о звездах.
 count_of_operations = 0
